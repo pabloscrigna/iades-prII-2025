@@ -32,7 +32,7 @@ def sumar(a,b):
     return a + b
 
 resultado = sumar(1,2)
-print(resultado)
+print("resultado: ",resultado)
 
 print("solo invocar sumar")
 sumar(6,7)
