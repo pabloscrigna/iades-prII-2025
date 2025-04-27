@@ -1,0 +1,571 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Funciones"
+      ],
+      "metadata": {
+        "id": "o23eaJLUCM4O"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "* Mas ordenado el codigo\n",
+        "* No repetir codigo"
+      ],
+      "metadata": {
+        "id": "pO63RxpNCn8S"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "https://docs.python.org/es/3/library/functions.html"
+      ],
+      "metadata": {
+        "id": "vJYncjWtC3T_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "~~~\n",
+        "def NOMBRE_FUNCION(PARÁMETROS):\n",
+        "    SENTENCIAS\n",
+        "    return [EXPRESIÓN]\n",
+        "~~~\n",
+        "* __Nombre__: Es el nombre de la función\n",
+        "* __Parámetro__: En las funciones, cuando recibe argumentos, se les denominan parámetros.\n",
+        "* __Sentencias__: Es el bloque del código que ejecuta la función.\n",
+        "* __Return__: Es una sentencia de Python, le indica a la función qué devolver cuando llamamos a la función\n",
+        "* __Expresión__: Es lo que devuelve la funcion."
+      ],
+      "metadata": {
+        "id": "S6__Jz6kDUAG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def saludar():\n",
+        "  print(\"Hola mundo!!!\")\n",
+        "  return"
+      ],
+      "metadata": {
+        "id": "BMZqXD1yBK1Q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "saludar()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "za-PhZgDDl8O",
+        "outputId": "cfd82cd4-e165-4736-d2bb-cada23e37105"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hola mundo!!!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def saludar_nombre(nombre):\n",
+        "  print(type(nombre))\n",
+        "  print(f\"Hola {nombre}\")\n",
+        "  return"
+      ],
+      "metadata": {
+        "id": "P0sBaWycDoep"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = \"Juan\"\n",
+        "saludar_nombre(\"Juan\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZWJ8XiP9ELC8",
+        "outputId": "2c66febf-4d4f-44a9-c690-b7078a9cb315"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n",
+            "Hola Juan\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "saludar_nombre(10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BHcVQ0zJEYO5",
+        "outputId": "83d88919-20e2-4348-c5cf-60195bef0aa2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "Hola 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = 10\n",
+        "\n",
+        "print(f\"el numero vale {numero}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JY_q7vDaEhWX",
+        "outputId": "eee86271-edec-4082-b789-086934f71b94"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "el numero vale 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UZolVIsSE9m3",
+        "outputId": "ea0713ad-8968-4710-9a77-6d464bf88c8d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "UkJXrqA3FCh6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "nombre de las funciones\n",
+        "\n",
+        "* siempre en minuscula\n",
+        "* las palabras se separan con guiones bajos\n",
+        "* utilizar nombres autoexplicativos\n",
+        "* usar nombres que definan la funcion"
+      ],
+      "metadata": {
+        "id": "k2riTE2_FOpF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# siempre empiezan con minusculas\n",
+        "def sumar():\n",
+        "  pass"
+      ],
+      "metadata": {
+        "id": "KNnb69mCFR44"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# separan con guiones\n",
+        "def sumar_dos_numeros():\n",
+        "  pass\n"
+      ],
+      "metadata": {
+        "id": "WS9PjwKrGBOB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# nombres que definan la funcion\n",
+        "def funcion_2():\n",
+        "  pass"
+      ],
+      "metadata": {
+        "id": "o3c3jICUGkVV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Variables y funciones"
+      ],
+      "metadata": {
+        "id": "s7uDuU5wGzp6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# variables globales\n",
+        "\n",
+        "DEBUG = True\n",
+        "\n",
+        "def funcion_global():\n",
+        "  print(f\"debug dentro de la funcion: {DEBUG}\")\n",
+        "\n",
+        "print(\"programa principal\")\n",
+        "print(f\"debug fuera de la funcion: {DEBUG}\")\n",
+        "funcion_global()\n",
+        "print(f\"debug fuera de la funcion: {DEBUG}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SHinI97xG5hH",
+        "outputId": "0be762bb-ac37-4aa4-c8c5-8d184ebf78c8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "programa principal\n",
+            "debug fuera de la funcion: True\n",
+            "debug dentro de la funcion: True\n",
+            "debug fuera de la funcion: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# variables locales\n",
+        "\n",
+        "numero_local = 20\n",
+        "\n",
+        "def funcion_local():\n",
+        "  numero_local = 10\n",
+        "  print(\"numero local: \", numero_local)\n",
+        "  return\n",
+        "\n",
+        "print(\"programa principal\")\n",
+        "print(numero_local)\n",
+        "funcion_local()\n",
+        "# print(numero)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cHefTVL-K5yR",
+        "outputId": "b92bd457-55d6-41ed-8029-04d279586f3a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "programa principal\n",
+            "20\n",
+            "numero local:  10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Las variables que se crean adentro de una funcion, solo viven adentro de la funcion"
+      ],
+      "metadata": {
+        "id": "oQUQnR49L_VJ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Momentos de la funcion\n",
+        "\n",
+        "* la definicion\n",
+        "* la llamada"
+      ],
+      "metadata": {
+        "id": "u3obu4-rMGhI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def suma(num1, num2):\n",
+        "  return num1 + num2"
+      ],
+      "metadata": {
+        "id": "57pEPVtEIOT0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Retornando valores\n",
+        "\n",
+        "las funciones se comunican con el programa principal, retornando valores mediante la expresion **return**"
+      ],
+      "metadata": {
+        "id": "OpbUvMz4M1LB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# retorn un string\n",
+        "def saludar_nombre(nombre):\n",
+        "  msg = f\"Hola {nombre}\"\n",
+        "  return msg"
+      ],
+      "metadata": {
+        "id": "nY2tc6qLMx9M"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "saludar_nombre(\"Juan\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "rFY0x3LqNQAJ",
+        "outputId": "d6c27704-7298-47a8-8ea1-0d31192e8558"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Hola Juan'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 46
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mensaje = saludar_nombre(\"Claudio\")"
+      ],
+      "metadata": {
+        "id": "RL0oAhC1NipL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mensaje"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "gkdcxKHdNsnL",
+        "outputId": "1af8fcdf-e5d6-42ef-ef6a-740e2940fe92"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Hola Claudio'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 53
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mensaje2 = saludar_nombre(\"Juan\")"
+      ],
+      "metadata": {
+        "id": "_ZERlYfkN-36"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mensaje2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "1X_85ubXOeC6",
+        "outputId": "15e992a8-873a-4066-ead4-61cbd2643296"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Hola Juan'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 55
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def suma(a, b):\n",
+        "  resultado = a + b\n",
+        "  return resultado"
+      ],
+      "metadata": {
+        "id": "kui9hMr5OeyJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suma(5,5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ag-NH8fgOqoZ",
+        "outputId": "96424850-89e3-498b-e44f-dfd13793d327"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "10"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 57
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "1f56S7D8OuN6"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
