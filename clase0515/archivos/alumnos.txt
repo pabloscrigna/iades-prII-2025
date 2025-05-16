@@ -1,0 +1,6 @@
+josesito,27,pyton
+matias,30,java
+mica,27,pyton
+maria,30,java
+mica,27,pyton
+maria,30,java
