@@ -1,0 +1,24 @@
+{
+    "nombre": "Ernesto",
+    "edad": 56,
+    "peso": 78.9,
+    "idiomas": [
+        "ingles",
+        "frances"
+    ],
+    "activo": true,
+    "colores": {
+        "front": "",
+        "back": ""
+    },
+    "cursos": [
+        {
+            "nombre": "python",
+            "cantidad": 45
+        },
+        {
+            "nombre": "C++",
+            "cantidad": 78
+        }
+    ]
+}
