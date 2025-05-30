@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "parabrisa",
+        "codigo": "4567",
+        "fecha_ingreso": "2025-05-30T00:27:32.986237+00:00",
+        "fecha_modificacion": "2025-05-30T01:05:44.726657+00:00"
+    },
+    {
+        "nombre": "palier",
+        "codigo": "488",
+        "fecha_ingreso": "2025-05-30T00:29:34.956304+00:00",
+        "fecha_modificacion": "2025-05-30T00:29:34.956340+00:00"
+    }
+]
