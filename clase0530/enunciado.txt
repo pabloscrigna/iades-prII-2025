@@ -1,0 +1,21 @@
+datos_entrada = ['80 alan.com.ar', '60 juan.com.ar', '34 unlp.edu.ar' ]
+
+
+tu programa tiene que procesar la lista de entrada y contar la cantida de veces que aparecen los dominios y subdominios
+
+
+pepe.com.ar  50
+     com.ar  50
+         ar  50
+
+juan.com.ar  60
+     com.ar  60
+         ar  60
+         
+unlp.edu.ar  34
+     edu.ar  34
+         ar  34
+         
+                  
+salida = [ '50 pepe.com.ar', '144 com.ar', '144 ar', '60 juan.com.ar', '34 unlp.edu.ar', '34 edu.ar" ]
+
