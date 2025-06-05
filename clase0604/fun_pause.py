@@ -10,9 +10,9 @@ def contar_cinco():
     print("Sigo procesando")
     print("Vuelvo")
     yield 200
-    yield 3
-    yield 4
-    yield 5
+    yield 300
+    yield 400
+    yield 500
 
 
 gen_5 = contar_cinco()
